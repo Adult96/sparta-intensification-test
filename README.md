@@ -58,7 +58,8 @@ useEffect(() => {
 ```
 ## 5.완료된 카드의 상세 페이지에 진입 하였을 때 올바른 데이터를 불러오지 못함.
 - to={`/${index}`}를  to={`/${todo.id}`}로 변경 
-- 
+
+
 ```javascript
 //List.jsx
 <StLink to={`/${todo.id}`} key={todo.id}>
@@ -69,6 +70,8 @@ useEffect(() => {
 ## 6.취소 버튼 클릭시 기능이 작동하지 않음.
 - 함수 인자로 todo.id전달 해야하기 때문에 화살표 함수로 감싼후 전달
 
+
+```javascript
 //List.jsx
 <StButton
                     borderColor='green'
@@ -76,4 +79,4 @@ useEffect(() => {
                   >
                     {todo.isDone ? '취소!' : '완료!'}
                   </StButton>
-
+```
