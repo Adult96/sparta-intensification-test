@@ -73,10 +73,10 @@ useEffect(() => {
 
 ```javascript
 //List.jsx
-<StButton
-                    borderColor='green'
-                    onClick={() => onToggleStatusTodo(todo.id)}
-                  >
-                    {todo.isDone ? '취소!' : '완료!'}
-                  </StButton>
+<StButton 
+    borderColor='green'
+    onClick={() => onToggleStatusTodo(todo.id)}
+>
+    {todo.isDone ? '취소!' : '완료!'}
+</StButton>
 ```
